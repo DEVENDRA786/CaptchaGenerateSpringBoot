@@ -22,7 +22,7 @@ public class UserController {
     @Autowired
     private IUserService service;
 
-    @GetMapping("/register")
+    @GetMapping("/registerUser")
     public String registerUser(Model model) {
         User user = new User();
         getCaptcha(user);
